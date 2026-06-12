@@ -1,75 +1,239 @@
-<!DOCTYPE html><html lang="pt-BR"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>FS Art Studio — Creative Intelligence</title>
-<meta name="description" content="Branding, Design, Motion, IA e experiências digitais premium.">
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>FS Art Studio | Nova Experiência Digital</title>
+
+<meta name="description" content="Estamos criando uma nova experiência digital para apresentar nossos projetos de branding, design, motion graphics, inteligência artificial e comunicação visual.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
-</head><body>
-<header id="header"><div class="container nav">
-<div class="brand"><img src="assets/logo.svg"><span>FS Art Studio</span></div>
-<nav><a href="#services">Services</a><a href="#work">Work</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
-</div></header>
 
-<section class="hero">
-<div class="video-bg"></div>
-<div class="container hero-content">
-<div class="eyebrow">CREATIVE INTELLIGENCE STUDIO</div>
-<h1>Designing brands for the next decade.</h1>
-<p>Branding, digital design, motion graphics and AI-powered creativity for ambitious companies.</p>
-<div class="actions">
-<a class="btn primary" href="https://wa.me/5521995556502">Start a Project</a>
-<a class="btn secondary" href="#work">View Work</a>
+<style>
+
+:root{
+--bg:#050b10;
+--accent:#6bd4ff;
+--text:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Inter',sans-serif;
+background:#000;
+overflow:hidden;
+}
+
+.video-background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+object-fit:cover;
+z-index:-3;
+transform:scale(1.08);
+}
+
+.overlay{
+position:fixed;
+inset:0;
+background:
+linear-gradient(
+180deg,
+rgba(0,0,0,.78),
+rgba(5,11,16,.82)
+);
+z-index:-2;
+}
+
+.glow{
+position:fixed;
+inset:0;
+background:
+radial-gradient(
+circle at center,
+rgba(107,212,255,.10),
+transparent 60%
+);
+z-index:-1;
+}
+
+.container{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:30px;
+}
+
+.content{
+max-width:850px;
+}
+
+.logo{
+width:180px;
+margin-bottom:40px;
+opacity:.95;
+}
+
+.tag{
+color:var(--accent);
+font-size:.85rem;
+letter-spacing:4px;
+margin-bottom:20px;
+font-weight:600;
+}
+
+h1{
+color:white;
+font-size:clamp(2.6rem,6vw,5rem);
+font-weight:800;
+line-height:1.05;
+margin-bottom:25px;
+}
+
+p{
+color:rgba(255,255,255,.82);
+font-size:1.1rem;
+line-height:1.8;
+max-width:700px;
+margin:0 auto 40px;
+}
+
+.buttons{
+display:flex;
+justify-content:center;
+gap:16px;
+flex-wrap:wrap;
+}
+
+.btn{
+padding:16px 30px;
+border-radius:999px;
+text-decoration:none;
+font-weight:700;
+transition:.35s;
+}
+
+.btn-primary{
+background:white;
+color:#07131c;
+}
+
+.btn-primary:hover{
+transform:translateY(-3px);
+}
+
+.btn-secondary{
+border:1px solid rgba(255,255,255,.4);
+color:white;
+}
+
+.btn-secondary:hover{
+background:rgba(255,255,255,.08);
+}
+
+.footer{
+position:fixed;
+bottom:30px;
+left:0;
+width:100%;
+text-align:center;
+color:rgba(255,255,255,.55);
+font-size:.8rem;
+letter-spacing:2px;
+}
+
+@media(max-width:768px){
+
+.logo{
+width:130px;
+}
+
+p{
+font-size:1rem;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<video
+class="video-background"
+autoplay
+muted
+loop
+playsinline>
+
+<source src="assets/video/showreel.mp4" type="video/mp4">
+
+</video>
+
+<div class="overlay"></div>
+<div class="glow"></div>
+
+<div class="container">
+
+<div class="content">
+
+<img
+src="assets/logo.svg"
+alt="FS Art Studio"
+class="logo">
+
+<div class="tag">
+CREATIVE INTELLIGENCE STUDIO
 </div>
+
+<h1>
+Estamos criando uma nova experiência digital.
+</h1>
+
+<p>
+Nosso novo site está sendo desenvolvido para apresentar uma visão mais completa do trabalho da FS Art Studio em branding, design gráfico, motion graphics, inteligência artificial e experiências digitais de alto impacto.
+</p>
+
+<div class="buttons">
+
+<a
+href="https://wa.me/5521995556502"
+class="btn btn-primary">
+
+Solicitar Proposta
+
+</a>
+
+<a
+href="mailto:contato@fsartstudio.com.br"
+class="btn btn-secondary">
+
+Entrar em Contato
+
+</a>
+
 </div>
-</section>
 
-<section class="logos container">
-<div>BRANDING</div><div>DESIGN</div><div>MOTION</div><div>AI</div><div>WEB</div>
-</section>
-
-<section id="services" class="container section">
-<h2>Services</h2>
-<div class="grid">
-<div class="card"><h3>Brand Strategy</h3><p>Positioning, identity and brand systems.</p></div>
-<div class="card"><h3>Visual Design</h3><p>Premium print and digital experiences.</p></div>
-<div class="card"><h3>AI Content</h3><p>Images, campaigns and cinematic storytelling.</p></div>
-<div class="card"><h3>Motion Graphics</h3><p>Dynamic content for modern brands.</p></div>
-<div class="card"><h3>Web Experiences</h3><p>High-conversion websites and landing pages.</p></div>
-<div class="card"><h3>Creative Consulting</h3><p>Innovation and communication strategy.</p></div>
 </div>
-</section>
 
-<section id="work" class="showcase">
-<h2>Selected Work</h2>
-<div class="projects">
-<div class="project">Luxury Branding</div>
-<div class="project">Editorial Design</div>
-<div class="project">AI Campaigns</div>
-<div class="project">Motion Design</div>
 </div>
-</section>
 
-<section class="metrics container">
-<div><strong>10+</strong><span>Years</span></div>
-<div><strong>30+</strong><span>Experience</span></div>
-<div><strong>100%</strong><span>Custom Solutions</span></div>
-<div><strong>∞</strong><span>Creative Possibilities</span></div>
-</section>
+<div class="footer">
+BRANDING • DESIGN • MOTION GRAPHICS • IA GENERATIVA
+</div>
 
-<section id="about" class="container section">
-<h2>Built for brands that refuse to be ordinary.</h2>
-<p>FS Art Studio combines strategy, creativity and technology to build memorable brands and impactful visual experiences.</p>
-</section>
-
-<section class="cta">
-<h2>Let's create something remarkable.</h2>
-<a class="btn primary" href="https://wa.me/5521995556502">Schedule a Meeting</a>
-</section>
-
-<footer id="contact">
-<h3>FS Art Studio</h3>
-<p>fsartstudio.com.br</p>
-<p>+55 21 99555-6502</p>
-</footer>
-<script src="js/script.js"></script>
-</body></html>
+</body>
+</html>
+```
